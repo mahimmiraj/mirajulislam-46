@@ -4,8 +4,16 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #3F4F44;
-  --text-color: #fff;
+  /* Color palette from user's design */
+  --primary: 105 108 56; /* 606C38 - Dark olive green */
+  --primary-dark: 40 54 24; /* 283618 - Very dark green */
+  --background: 254 250 224; /* FEFAE0 - Cream */
+  --accent: 221 161 94; /* DDA15E - Golden yellow */
+  --accent-dark: 188 108 37; /* BC6C25 - Orange brown */
+  --foreground: 40 54 24; /* Dark text */
+  --muted: 105 108 56; /* Muted text */
+  --card: 254 250 224; /* Card background */
+  --border: 105 108 56; /* Border color */
 }
 
 body {
@@ -15,8 +23,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #121212;
-  color: var(--text-color);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
 code {

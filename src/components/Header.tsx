@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 py-4">
+    <header className="bg-primary-dark py-4 shadow-lg">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">Mirajul Islam</Link>
+        <Link to="/" className="text-xl font-bold text-background hover:text-accent transition">
+          Md. Mirajul Islam
+        </Link>
         <nav>
           <ul className="flex space-x-6">
-            <li><Link to="/" className="hover:text-green-400 transition">Home</Link></li>
-            <li><Link to="/about" className="hover:text-green-400 transition">About</Link></li>
-            <li><Link to="/projects" className="hover:text-green-400 transition">Projects</Link></li>
-            <li><Link to="/contact" className="hover:text-green-400 transition">Contact</Link></li>
+            <li><Link to="/" className="text-background hover:text-accent transition">Home</Link></li>
+            <li><a href="#about" className="text-background hover:text-accent transition">About</a></li>
+            <li><a href="#projects" className="text-background hover:text-accent transition">Projects</a></li>
+            <li><a href="#contact" className="text-background hover:text-accent transition">Contact</a></li>
           </ul>
         </nav>
       </div>
